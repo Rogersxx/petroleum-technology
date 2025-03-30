@@ -1,10 +1,11 @@
 <script setup lang="ts">
+import { reactive } from "vue";
 import HelloWorld from "./components/HelloWorld.vue";
+import { getPageData, PageData } from "./utils/data";
 
-const abs = 456;
-console.log(Array.isArray(abs));
+const pageData = reactive<PageData>(getPageData());
 
-console.log((window as any)["ABC"]);
+console.log(pageData);
 </script>
 
 <template>
