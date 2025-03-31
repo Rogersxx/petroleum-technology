@@ -4,6 +4,8 @@ window.PAGE_DATA = [
     languageAbbreviation: "CHS",
     /* 语言全称 */
     language: "简体中文",
+    /* 浏览器标签显示名称（网站名称） */
+    title: "xxx官网",
     /* 
       导航栏页面菜单，增加一项即可增加一个页面。只有一项时菜单不显示
       title：页面名称

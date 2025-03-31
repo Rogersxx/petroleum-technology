@@ -2,13 +2,32 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: #000000;
+  font-family: "Microsoft YaHei";
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: var(--el-color-primary-opacity-4);
+}
+
+*::-webkit-scrollbar-corner {
+  background: none;
 }
 
 html,
 body {
   width: 100%;
   height: 100%;
+  overflow: hidden;
+  font-size: 14px;
+  color: var(--pt-font-color);
+  background-color: #ffffff;
+  line-height: 1.5;
 }
 
 a {
@@ -17,4 +36,54 @@ a {
 
 ul {
   list-style: none;
+}
+
+#pt-app {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+}
+
+.app-loading {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-loading .circular {
+  height: 42px;
+  width: 42px;
+  animation: loading-rotate 2s linear infinite;
+}
+
+.app-loading .circular circle {
+  stroke-dasharray: 90, 150;
+  stroke-width: 2;
+  stroke: var(--el-color-primary);
+  animation: loading-dash 1.5s ease-in-out infinite;
+}
+
+@keyframes loading-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loading-dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -40px;
+  }
+
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -120px;
+  }
 }

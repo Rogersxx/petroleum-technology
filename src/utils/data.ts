@@ -13,11 +13,14 @@ class PageIistItem {
 export class PageData {
   languageAbbreviation: string = "";
   language: string = "";
+  title: string = "";
   pageList: PageIistItem[] = [];
   constructor(data: any = {}) {
     if (!data) return;
     this.languageAbbreviation = data.languageAbbreviation || "CHS";
     this.language = data.language || "简体中文";
+    this.title = data.title || "PT";
+    document.title = this.title;
     if (Array.isArray(data.pageList))
       this.pageList = data.pageList.map((item: any) => new PageIistItem(item));
   }

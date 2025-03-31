@@ -1,0 +1,335 @@
+/* ======== 平台样式规范 ======== */
+:root {
+  /* 弹窗幕布颜色 */
+  --pt-curtain-color: rgba(0, 0, 0, 0.45);
+  /* 状态色 */
+  --pt-status-color-success: #55d187;
+  --pt-status-color-warning: #efbd47;
+  --pt-status-color-error: #f01c1c;
+  --pt-status-color-disabled: #a3a3a3;
+  /* 文字颜色 */
+  --pt-font-color: #000000;
+  /* 边框颜色 */
+  --pt-border-color: #e0e0e0;
+  /* 默认主题 */
+  /* color: #0066cc; */
+  --el-color-primary: #219cf4;
+  --el-color-primary-light-1: rgb(55, 166, 245);
+  --el-color-primary-light-2: rgb(77, 176, 246);
+  --el-color-primary-light-3: rgb(100, 186, 247);
+  --el-color-primary-light-4: rgb(122, 196, 248);
+  --el-color-primary-light-5: rgb(144, 206, 250);
+  --el-color-primary-light-6: rgb(166, 215, 251);
+  --el-color-primary-light-7: rgb(188, 225, 252);
+  --el-color-primary-light-8: rgb(211, 235, 253);
+  --el-color-primary-light-9: rgb(233, 245, 254);
+  --el-color-primary-dark-1: rgb(30, 140, 220);
+  --el-color-primary-dark-2: rgb(26, 125, 195);
+  --el-color-primary-dark-3: rgb(23, 109, 171);
+  --el-color-primary-dark-4: rgb(20, 94, 146);
+  --el-color-primary-dark-5: rgb(17, 78, 122);
+  --el-color-primary-dark-6: rgb(13, 62, 98);
+  --el-color-primary-dark-7: rgb(10, 47, 73);
+  --el-color-primary-dark-8: rgb(7, 31, 49);
+  --el-color-primary-dark-9: rgb(3, 16, 24);
+  --el-color-primary-opacity-1: rgb(33, 156, 244, 0.1);
+  --el-color-primary-opacity-2: rgb(33, 156, 244, 0.2);
+  --el-color-primary-opacity-3: rgb(33, 156, 244, 0.3);
+  --el-color-primary-opacity-4: rgb(33, 156, 244, 0.4);
+  --el-color-primary-opacity-5: rgb(33, 156, 244, 0.5);
+  --el-color-primary-opacity-6: rgb(33, 156, 244, 0.6);
+  --el-color-primary-opacity-7: rgb(33, 156, 244, 0.7);
+  --el-color-primary-opacity-8: rgb(33, 156, 244, 0.8);
+  --el-color-primary-opacity-9: rgb(33, 156, 244, 0.9);
+  /* dark-blue 深蓝 默认主题 */
+  --pt-theme-dark-blue: #0161ff;
+  /* light-blue 浅蓝 */
+  --pt-theme-light-blue: #409eff;
+  /* dark-red 深红 */
+  --pt-theme-dark-red: #ff6669;
+  /* light-red 浅红 */
+  --pt-theme-light-red: #ff5c93;
+  /* dark-green 深绿 */
+  --pt-theme-dark-green: #1eb4ac;
+  /* light-green 浅绿 */
+  --pt-theme-light-green: #87cf49;
+  /* purple 紫色 */
+  --pt-theme-purple: #bc40d1;
+  /* yellow 黄色 */
+  --pt-theme-yellow: #f1b868;
+  /* orange 橙色 */
+  --pt-theme-orange: #ffa500;
+}
+
+/* 主题颜色全局变量 */
+.pt-theme-dark-blue {
+  --el-color-primary: #0161ff;
+  --el-color-primary-light-1: rgb(26, 113, 255);
+  --el-color-primary-light-2: rgb(52, 129, 255);
+  --el-color-primary-light-3: rgb(77, 144, 255);
+  --el-color-primary-light-4: rgb(103, 160, 255);
+  --el-color-primary-light-5: rgb(128, 176, 255);
+  --el-color-primary-light-6: rgb(153, 192, 255);
+  --el-color-primary-light-7: rgb(179, 208, 255);
+  --el-color-primary-light-8: rgb(204, 223, 255);
+  --el-color-primary-light-9: rgb(230, 239, 255);
+  --el-color-primary-dark-1: rgb(1, 87, 230);
+  --el-color-primary-dark-2: rgb(1, 78, 204);
+  --el-color-primary-dark-3: rgb(1, 68, 179);
+  --el-color-primary-dark-4: rgb(1, 58, 153);
+  --el-color-primary-dark-5: rgb(1, 49, 128);
+  --el-color-primary-dark-6: rgb(0, 39, 102);
+  --el-color-primary-dark-7: rgb(0, 29, 77);
+  --el-color-primary-dark-8: rgb(0, 19, 51);
+  --el-color-primary-dark-9: rgb(0, 10, 26);
+  --el-color-primary-opacity-1: rgba(1, 97, 255, 0.1);
+  --el-color-primary-opacity-2: rgba(1, 97, 255, 0.2);
+  --el-color-primary-opacity-3: rgba(1, 97, 255, 0.3);
+  --el-color-primary-opacity-4: rgba(1, 97, 255, 0.4);
+  --el-color-primary-opacity-5: rgba(1, 97, 255, 0.5);
+  --el-color-primary-opacity-6: rgba(1, 97, 255, 0.6);
+  --el-color-primary-opacity-7: rgba(1, 97, 255, 0.7);
+  --el-color-primary-opacity-8: rgba(1, 97, 255, 0.8);
+  --el-color-primary-opacity-9: rgba(1, 97, 255, 0.9);
+}
+.pt-theme-light-blue {
+  --el-color-primary: #409eff;
+  --el-color-primary-light-1: rgb(83, 168, 255);
+  --el-color-primary-light-2: rgb(102, 177, 255);
+  --el-color-primary-light-3: rgb(121, 187, 255);
+  --el-color-primary-light-4: rgb(140, 197, 255);
+  --el-color-primary-light-5: rgb(160, 207, 255);
+  --el-color-primary-light-6: rgb(179, 216, 255);
+  --el-color-primary-light-7: rgb(198, 226, 255);
+  --el-color-primary-light-8: rgb(217, 236, 255);
+  --el-color-primary-light-9: rgb(236, 245, 255);
+  --el-color-primary-dark-1: rgb(58, 142, 230);
+  --el-color-primary-dark-2: rgb(51, 126, 204);
+  --el-color-primary-dark-3: rgb(45, 111, 179);
+  --el-color-primary-dark-4: rgb(38, 95, 153);
+  --el-color-primary-dark-5: rgb(32, 79, 128);
+  --el-color-primary-dark-6: rgb(26, 63, 102);
+  --el-color-primary-dark-7: rgb(19, 47, 77);
+  --el-color-primary-dark-8: rgb(13, 32, 51);
+  --el-color-primary-dark-9: rgb(6, 16, 26);
+  --el-color-primary-opacity-1: rgba(64, 158, 255, 0.1);
+  --el-color-primary-opacity-2: rgba(64, 158, 255, 0.2);
+  --el-color-primary-opacity-3: rgba(64, 158, 255, 0.3);
+  --el-color-primary-opacity-4: rgba(64, 158, 255, 0.4);
+  --el-color-primary-opacity-5: rgba(64, 158, 255, 0.5);
+  --el-color-primary-opacity-6: rgba(64, 158, 255, 0.6);
+  --el-color-primary-opacity-7: rgba(64, 158, 255, 0.7);
+  --el-color-primary-opacity-8: rgba(64, 158, 255, 0.8);
+  --el-color-primary-opacity-9: rgba(64, 158, 255, 0.9);
+}
+.pt-theme-dark-red {
+  --el-color-primary: #ff6669;
+  --el-color-primary-light-1: rgb(255, 117, 120);
+  --el-color-primary-light-2: rgb(255, 133, 135);
+  --el-color-primary-light-3: rgb(255, 148, 150);
+  --el-color-primary-light-4: rgb(255, 163, 165);
+  --el-color-primary-light-5: rgb(255, 179, 180);
+  --el-color-primary-light-6: rgb(255, 194, 195);
+  --el-color-primary-light-7: rgb(255, 209, 210);
+  --el-color-primary-light-8: rgb(255, 224, 225);
+  --el-color-primary-light-9: rgb(255, 240, 240);
+  --el-color-primary-dark-1: rgb(230, 92, 95);
+  --el-color-primary-dark-2: rgb(204, 82, 84);
+  --el-color-primary-dark-3: rgb(179, 71, 74);
+  --el-color-primary-dark-4: rgb(153, 61, 63);
+  --el-color-primary-dark-5: rgb(128, 51, 53);
+  --el-color-primary-dark-6: rgb(102, 41, 42);
+  --el-color-primary-dark-7: rgb(77, 31, 32);
+  --el-color-primary-dark-8: rgb(51, 20, 21);
+  --el-color-primary-dark-9: rgb(26, 10, 11);
+  --el-color-primary-opacity-1: rgba(255, 102, 105, 0.1);
+  --el-color-primary-opacity-2: rgba(255, 102, 105, 0.2);
+  --el-color-primary-opacity-3: rgba(255, 102, 105, 0.3);
+  --el-color-primary-opacity-4: rgba(255, 102, 105, 0.4);
+  --el-color-primary-opacity-5: rgba(255, 102, 105, 0.5);
+  --el-color-primary-opacity-6: rgba(255, 102, 105, 0.6);
+  --el-color-primary-opacity-7: rgba(255, 102, 105, 0.7);
+  --el-color-primary-opacity-8: rgba(255, 102, 105, 0.8);
+  --el-color-primary-opacity-9: rgba(255, 102, 105, 0.9);
+}
+.pt-theme-light-red {
+  --el-color-primary: #ff5c93;
+  --el-color-primary-light-1: rgb(255, 108, 158);
+  --el-color-primary-light-2: rgb(255, 125, 169);
+  --el-color-primary-light-3: rgb(255, 141, 179);
+  --el-color-primary-light-4: rgb(255, 157, 190);
+  --el-color-primary-light-5: rgb(255, 174, 201);
+  --el-color-primary-light-6: rgb(255, 190, 212);
+  --el-color-primary-light-7: rgb(255, 206, 223);
+  --el-color-primary-light-8: rgb(255, 222, 233);
+  --el-color-primary-light-9: rgb(255, 239, 244);
+  --el-color-primary-dark-1: rgb(230, 83, 132);
+  --el-color-primary-dark-2: rgb(204, 74, 118);
+  --el-color-primary-dark-3: rgb(179, 64, 103);
+  --el-color-primary-dark-4: rgb(153, 55, 88);
+  --el-color-primary-dark-5: rgb(128, 46, 74);
+  --el-color-primary-dark-6: rgb(102, 37, 59);
+  --el-color-primary-dark-7: rgb(77, 28, 44);
+  --el-color-primary-dark-8: rgb(51, 18, 29);
+  --el-color-primary-dark-9: rgb(26, 9, 15);
+  --el-color-primary-opacity-1: rgba(255, 92, 147, 0.1);
+  --el-color-primary-opacity-2: rgba(255, 92, 147, 0.2);
+  --el-color-primary-opacity-3: rgba(255, 92, 147, 0.3);
+  --el-color-primary-opacity-4: rgba(255, 92, 147, 0.4);
+  --el-color-primary-opacity-5: rgba(255, 92, 147, 0.5);
+  --el-color-primary-opacity-6: rgba(255, 92, 147, 0.6);
+  --el-color-primary-opacity-7: rgba(255, 92, 147, 0.7);
+  --el-color-primary-opacity-8: rgba(255, 92, 147, 0.8);
+  --el-color-primary-opacity-9: rgba(255, 92, 147, 0.9);
+}
+.pt-theme-dark-green {
+  --el-color-primary: #1eb4ac;
+  --el-color-primary-light-1: rgb(53, 188, 180);
+  --el-color-primary-light-2: rgb(75, 195, 189);
+  --el-color-primary-light-3: rgb(98, 203, 197);
+  --el-color-primary-light-4: rgb(120, 210, 205);
+  --el-color-primary-light-5: rgb(143, 218, 214);
+  --el-color-primary-light-6: rgb(165, 225, 222);
+  --el-color-primary-light-7: rgb(188, 233, 230);
+  --el-color-primary-light-8: rgb(210, 240, 238);
+  --el-color-primary-light-9: rgb(233, 248, 247);
+  --el-color-primary-dark-1: rgb(27, 162, 155);
+  --el-color-primary-dark-2: rgb(24, 144, 138);
+  --el-color-primary-dark-3: rgb(21, 126, 120);
+  --el-color-primary-dark-4: rgb(18, 108, 103);
+  --el-color-primary-dark-5: rgb(15, 90, 86);
+  --el-color-primary-dark-6: rgb(12, 72, 69);
+  --el-color-primary-dark-7: rgb(9, 54, 52);
+  --el-color-primary-dark-8: rgb(6, 36, 34);
+  --el-color-primary-dark-9: rgb(3, 18, 17);
+  --el-color-primary-opacity-1: rgba(30, 180, 172, 0.1);
+  --el-color-primary-opacity-2: rgba(30, 180, 172, 0.2);
+  --el-color-primary-opacity-3: rgba(30, 180, 172, 0.3);
+  --el-color-primary-opacity-4: rgba(30, 180, 172, 0.4);
+  --el-color-primary-opacity-5: rgba(30, 180, 172, 0.5);
+  --el-color-primary-opacity-6: rgba(30, 180, 172, 0.6);
+  --el-color-primary-opacity-7: rgba(30, 180, 172, 0.7);
+  --el-color-primary-opacity-8: rgba(30, 180, 172, 0.8);
+  --el-color-primary-opacity-9: rgba(30, 180, 172, 0.9);
+}
+.pt-theme-light-green {
+  --el-color-primary: #87cf49;
+  --el-color-primary-light-1: rgb(147, 212, 91);
+  --el-color-primary-light-2: rgb(159, 217, 109);
+  --el-color-primary-light-3: rgb(171, 221, 128);
+  --el-color-primary-light-4: rgb(183, 226, 146);
+  --el-color-primary-light-5: rgb(195, 231, 164);
+  --el-color-primary-light-6: rgb(207, 236, 182);
+  --el-color-primary-light-7: rgb(219, 241, 200);
+  --el-color-primary-light-8: rgb(231, 245, 219);
+  --el-color-primary-light-9: rgb(243, 250, 237);
+  --el-color-primary-dark-1: rgb(122, 186, 66);
+  --el-color-primary-dark-2: rgb(108, 166, 58);
+  --el-color-primary-dark-3: rgb(95, 145, 51);
+  --el-color-primary-dark-4: rgb(81, 124, 44);
+  --el-color-primary-dark-5: rgb(68, 104, 37);
+  --el-color-primary-dark-6: rgb(54, 83, 29);
+  --el-color-primary-dark-7: rgb(41, 62, 22);
+  --el-color-primary-dark-8: rgb(27, 41, 15);
+  --el-color-primary-dark-9: rgb(14, 21, 7);
+  --el-color-primary-opacity-1: rgba(135, 207, 73, 0.1);
+  --el-color-primary-opacity-2: rgba(135, 207, 73, 0.2);
+  --el-color-primary-opacity-3: rgba(135, 207, 73, 0.3);
+  --el-color-primary-opacity-4: rgba(135, 207, 73, 0.4);
+  --el-color-primary-opacity-5: rgba(135, 207, 73, 0.5);
+  --el-color-primary-opacity-6: rgba(135, 207, 73, 0.6);
+  --el-color-primary-opacity-7: rgba(135, 207, 73, 0.7);
+  --el-color-primary-opacity-8: rgba(135, 207, 73, 0.8);
+  --el-color-primary-opacity-9: rgba(135, 207, 73, 0.9);
+}
+.pt-theme-purple {
+  --el-color-primary: #bc40d1;
+  --el-color-primary-light-1: rgb(195, 83, 214);
+  --el-color-primary-light-2: rgb(201, 102, 218);
+  --el-color-primary-light-3: rgb(208, 121, 223);
+  --el-color-primary-light-4: rgb(215, 140, 227);
+  --el-color-primary-light-5: rgb(222, 160, 232);
+  --el-color-primary-light-6: rgb(228, 179, 237);
+  --el-color-primary-light-7: rgb(235, 198, 241);
+  --el-color-primary-light-8: rgb(242, 217, 246);
+  --el-color-primary-light-9: rgb(248, 236, 250);
+  --el-color-primary-dark-1: rgb(169, 58, 188);
+  --el-color-primary-dark-2: rgb(150, 51, 167);
+  --el-color-primary-dark-3: rgb(132, 45, 146);
+  --el-color-primary-dark-4: rgb(113, 38, 125);
+  --el-color-primary-dark-5: rgb(94, 32, 105);
+  --el-color-primary-dark-6: rgb(75, 26, 84);
+  --el-color-primary-dark-7: rgb(56, 19, 63);
+  --el-color-primary-dark-8: rgb(38, 13, 42);
+  --el-color-primary-dark-9: rgb(19, 6, 21);
+  --el-color-primary-opacity-1: rgba(188, 64, 209, 0.1);
+  --el-color-primary-opacity-2: rgba(188, 64, 209, 0.2);
+  --el-color-primary-opacity-3: rgba(188, 64, 209, 0.3);
+  --el-color-primary-opacity-4: rgba(188, 64, 209, 0.4);
+  --el-color-primary-opacity-5: rgba(188, 64, 209, 0.5);
+  --el-color-primary-opacity-6: rgba(188, 64, 209, 0.6);
+  --el-color-primary-opacity-7: rgba(188, 64, 209, 0.7);
+  --el-color-primary-opacity-8: rgba(188, 64, 209, 0.8);
+  --el-color-primary-opacity-9: rgba(188, 64, 209, 0.9);
+}
+.pt-theme-yellow {
+  --el-color-primary: #f1b868;
+  --el-color-primary-light-1: rgb(242, 191, 119);
+  --el-color-primary-light-2: rgb(244, 198, 134);
+  --el-color-primary-light-3: rgb(245, 205, 149);
+  --el-color-primary-light-4: rgb(247, 212, 164);
+  --el-color-primary-light-5: rgb(248, 220, 180);
+  --el-color-primary-light-6: rgb(249, 227, 195);
+  --el-color-primary-light-7: rgb(251, 234, 210);
+  --el-color-primary-light-8: rgb(252, 241, 225);
+  --el-color-primary-light-9: rgb(254, 248, 240);
+  --el-color-primary-dark-1: rgb(217, 166, 94);
+  --el-color-primary-dark-2: rgb(193, 147, 83);
+  --el-color-primary-dark-3: rgb(169, 129, 73);
+  --el-color-primary-dark-4: rgb(145, 110, 62);
+  --el-color-primary-dark-5: rgb(121, 92, 52);
+  --el-color-primary-dark-6: rgb(96, 74, 42);
+  --el-color-primary-dark-7: rgb(72, 55, 31);
+  --el-color-primary-dark-8: rgb(48, 37, 21);
+  --el-color-primary-dark-9: rgb(24, 18, 10);
+  --el-color-primary-opacity-1: rgba(241, 184, 104, 0.1);
+  --el-color-primary-opacity-2: rgba(241, 184, 104, 0.2);
+  --el-color-primary-opacity-3: rgba(241, 184, 104, 0.3);
+  --el-color-primary-opacity-4: rgba(241, 184, 104, 0.4);
+  --el-color-primary-opacity-5: rgba(241, 184, 104, 0.5);
+  --el-color-primary-opacity-6: rgba(241, 184, 104, 0.6);
+  --el-color-primary-opacity-7: rgba(241, 184, 104, 0.7);
+  --el-color-primary-opacity-8: rgba(241, 184, 104, 0.8);
+  --el-color-primary-opacity-9: rgba(241, 184, 104, 0.9);
+}
+
+.pt-theme-orange {
+  --el-color-primary: #ffa500;
+  --el-color-primary-light-1: rgb(255, 174, 26);
+  --el-color-primary-light-2: rgb(255, 183, 51);
+  --el-color-primary-light-3: rgb(255, 192, 77);
+  --el-color-primary-light-4: rgb(255, 201, 102);
+  --el-color-primary-light-5: rgb(255, 210, 128);
+  --el-color-primary-light-6: rgb(255, 219, 153);
+  --el-color-primary-light-7: rgb(255, 228, 179);
+  --el-color-primary-light-8: rgb(255, 237, 204);
+  --el-color-primary-light-9: rgb(255, 246, 230);
+  --el-color-primary-dark-1: rgb(230, 149, 0);
+  --el-color-primary-dark-2: rgb(204, 132, 0);
+  --el-color-primary-dark-3: rgb(179, 116, 0);
+  --el-color-primary-dark-4: rgb(153, 99, 0);
+  --el-color-primary-dark-5: rgb(128, 83, 0);
+  --el-color-primary-dark-6: rgb(102, 66, 0);
+  --el-color-primary-dark-7: rgb(77, 50, 0);
+  --el-color-primary-dark-8: rgb(51, 33, 0);
+  --el-color-primary-dark-9: rgb(26, 17, 0);
+  --el-color-primary-opacity-1: rgb(255, 165, 0, 0.1);
+  --el-color-primary-opacity-2: rgb(255, 165, 0, 0.2);
+  --el-color-primary-opacity-3: rgb(255, 165, 0, 0.3);
+  --el-color-primary-opacity-4: rgb(255, 165, 0, 0.4);
+  --el-color-primary-opacity-5: rgb(255, 165, 0, 0.5);
+  --el-color-primary-opacity-6: rgb(255, 165, 0, 0.6);
+  --el-color-primary-opacity-7: rgb(255, 165, 0, 0.7);
+  --el-color-primary-opacity-8: rgb(255, 165, 0, 0.8);
+  --el-color-primary-opacity-9: rgb(255, 165, 0, 0.9);
+}
