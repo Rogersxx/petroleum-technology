@@ -22,6 +22,18 @@ export class Section01BottomModule {
   }
 }
 
+export class Section02Module {
+  title: string = "";
+  content: string = "";
+  background: string = "";
+  constructor(data: any) {
+    if (!data) return;
+    this.title = data.title || "";
+    this.content = data.content || "";
+    this.background = data.background || "";
+  }
+}
+
 export class PageData {
   languageAbbreviation: string = "";
   language: string = "";
@@ -33,6 +45,12 @@ export class PageData {
   section01Text: string[] = [];
   section01ExperienceSrc: string = "";
   section01BottomModuleList: Section01BottomModule[] = [];
+  section02Text: string[] = [];
+  section02ModuleList: Section02Module[] = [];
+  section03Text: string[] = [];
+  section03ModuleList: Section02Module[] = [];
+  section04Text: string[] = [];
+
   constructor(data: any = {}) {
     if (!data) return;
     this.languageAbbreviation = data.languageAbbreviation || "CHS";
@@ -50,6 +68,17 @@ export class PageData {
       this.section01BottomModuleList = data.section01BottomModuleList.map(
         (item: any) => new Section01BottomModule(item)
       );
+    this.section02Text = data.section02Text || [];
+    if (Array.isArray(data.section02ModuleList))
+      this.section02ModuleList = data.section02ModuleList.map(
+        (item: any) => new Section02Module(item)
+      );
+    this.section03Text = data.section03Text || [];
+    if (Array.isArray(data.section03ModuleList))
+      this.section03ModuleList = data.section03ModuleList.map(
+        (item: any) => new Section02Module(item)
+      );
+    this.section04Text = data.section04Text || [];
   }
 }
 

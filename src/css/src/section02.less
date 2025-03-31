@@ -1,0 +1,118 @@
+.section-02 {
+  padding-top: 120px;
+  .section-subtitle {
+    margin-bottom: 50px;
+  }
+  .module-menu {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    padding: 0 95px;
+    border-bottom: 1px solid var(--pt-border-color);
+    .menu-item {
+      width: 320px;
+      height: 70px;
+      margin: 0 10px;
+      color: #444444;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      cursor: pointer;
+      transition-duration: 0.2s;
+      &::after {
+        display: block;
+        content: "";
+        height: 4px;
+        width: 0;
+        background-color: var(--el-color-primary);
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: 0;
+        transition-duration: 0.2s;
+      }
+      &:hover {
+        color: var(--el-color-primary);
+      }
+      &.active {
+        color: var(--el-color-primary);
+        font-weight: bold;
+        &::after {
+          width: 184px;
+          margin-left: -92px;
+        }
+      }
+    }
+  }
+  .module-box {
+    height: 940px;
+    background-image: url(/images/background/background-03.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    overflow: hidden;
+    position: relative;
+    .module-background {
+      width: 800px;
+      position: absolute;
+      left: -840px;
+      top: 115px;
+      transition-duration: 0.4s;
+      &.active {
+        left: 88px;
+        transition-delay: 0.2s;
+      }
+    }
+    .title {
+      width: 770px;
+      height: 48px;
+      position: absolute;
+      top: 150px;
+      right: -800px;
+      transition-duration: 0.4s;
+      transition-delay: 0.1s;
+      .text {
+        display: inline-block;
+        height: 48px;
+        line-height: 48px;
+        font-size: 48px;
+        background: -webkit-linear-gradient(
+          64deg,
+          var(--el-color-primary-dark-3) 0%,
+          var(--el-color-primary) 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-weight: bold;
+        position: relative;
+        .icon {
+          height: 88px;
+          position: absolute;
+          bottom: 0;
+          right: -55px;
+        }
+      }
+      &.active {
+        right: 240px;
+        transition-delay: 0.2s;
+      }
+    }
+    .content {
+      width: 770px;
+      line-height: 48px;
+      font-size: 24px;
+      white-space: pre-wrap;
+      position: absolute;
+      top: 296px;
+      right: -800px;
+      transition-duration: 0.4s;
+      transition-delay: 0.2s;
+      &.active {
+        right: 240px;
+        transition-delay: 0.3s;
+      }
+    }
+  }
+}

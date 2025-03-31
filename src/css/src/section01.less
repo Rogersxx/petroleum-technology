@@ -1,0 +1,111 @@
+.section-01 {
+  height: 1120px;
+  padding: 250px 220px 0 220px;
+  background-image: url(/images/background/background-02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  position: relative;
+  margin-bottom: 120px;
+  .text-01 {
+    height: 33px;
+    line-height: 33px;
+    font-size: 33px;
+    color: var(--el-color-primary-dark-1);
+    margin-bottom: 46px;
+  }
+  .text-02 {
+    height: 60px;
+    line-height: 60px;
+    font-size: 60px;
+    margin-bottom: 16px;
+  }
+  .text-03 {
+    display: inline-block;
+    height: 72px;
+    line-height: 72px;
+    font-size: 72px;
+    background: -webkit-linear-gradient(
+      64deg,
+      var(--el-color-primary-dark-3) 0%,
+      var(--el-color-primary) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+    margin-bottom: 54px;
+  }
+  .text-04 {
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 115px;
+  }
+  .experience {
+    width: 200px;
+    height: 68px;
+    background: linear-gradient(64deg, #217af4, #219cf4);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 42px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    &:hover {
+      box-shadow: 0 0 10px var(--el-color-primary-opacity-9);
+    }
+    .text {
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: bold;
+      margin-right: 21px;
+    }
+    .icon {
+      flex-shrink: 0;
+      height: 21px;
+    }
+  }
+  .module-list {
+    width: 100%;
+    padding: 0 78px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    bottom: -120px;
+    .module-item {
+      width: 560px;
+      height: 200px;
+      padding: 54px 39px;
+      border-radius: 12px;
+      overflow: hidden;
+      margin: 0 14px;
+      position: relative;
+      .background {
+        width: 560px;
+        height: 200px;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .title {
+        height: 30px;
+        line-height: 30px;
+        font-size: 30px;
+        color: #ffffff;
+        font-weight: bold;
+        margin-bottom: 16px;
+        position: relative;
+        z-index: 1;
+      }
+      .content {
+        font-size: 16px;
+        color: #ffffff;
+        white-space: pre;
+        position: relative;
+        z-index: 1;
+      }
+    }
+  }
+}
