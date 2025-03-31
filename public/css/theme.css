@@ -10,10 +10,11 @@
   /* 文字颜色 */
   --pt-font-color: #000000;
   /* 边框颜色 */
-  --pt-border-color: #e0e0e0;
+  --pt-border-color: #d7e6fe;
   /* 默认主题 */
   /* color: #0066cc; */
   --el-color-primary: #219cf4;
+  /* color: #217af4; */
   --el-color-primary-light-1: rgb(55, 166, 245);
   --el-color-primary-light-2: rgb(77, 176, 246);
   --el-color-primary-light-3: rgb(100, 186, 247);

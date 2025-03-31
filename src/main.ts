@@ -1,5 +1,8 @@
 import { createApp } from "vue";
 import App from "./App.vue";
+import { createPinia } from "pinia";
 import "./css/index.less";
 
-createApp(App).mount("#pt-app");
+const app = createApp(App);
+app.use(createPinia());
+app.mount("#pt-app");

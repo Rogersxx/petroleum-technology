@@ -1,40 +1,53 @@
 <template>
-  <!-- <HelloWorld msg="Vite + Vue" /> -->
-  <div class="body">
-    <div class="header">
-      <ul class="menu">
-        <li
-          class="menu-item"
-          :class="{ active: page === index }"
-          v-for="(menuItem, index) in pageData.pageList"
-          :key="index"
-          @click="page = index"
-        >
-          {{ menuItem.title }}
-        </li>
-      </ul>
-    </div>
-    <ul class="page-section">
+  <Header></Header>
+  <ul class="page-section">
+    <li class="section-item" :class="{ active: store.page === 0 }">
+      <div class="section-01">
+        <div class="text-01">{{ store.pageData.section01Text[0] }}</div>
+        <div class="text-02">{{ store.pageData.section01Text[1] }}</div>
+        <div class="text-03">{{ store.pageData.section01Text[2] }}</div>
+        <div class="text-04">{{ store.pageData.section01Text[3] }}</div>
+        <div class="experience" @click="goToExperience">
+          <div class="text">{{ store.pageData.section01Text[4] }}</div>
+          <Image class="icon" src="/images/icon/arrow-right.png"></Image>
+        </div>
+        <ul class="module-list">
+          <li
+            class="module-item"
+            v-for="(item, index) in store.pageData.section01BottomModuleList"
+            :key="index"
+          >
+            <Image class="background" :src="item.background"></Image>
+            <div class="title">{{ item.title }}</div>
+            <div class="content">{{ item.content }}</div>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <template v-for="(menuItem, index) in store.pageData.pageList" :key="index">
       <li
         class="section-item"
-        :class="`section-${index}${index === page ? ' active' : ''}`"
-        v-for="(menuItem, index) in pageData.pageList"
+        :class="{ active: store.page === index }"
+        v-if="index > 0"
       >
         {{ menuItem.title }}
       </li>
-    </ul>
-  </div>
+    </template>
+  </ul>
 </template>
 
 <script setup lang="ts">
-import { reactive, ref } from "vue";
-// import HelloWorld from "./components/HelloWorld.vue";
-import { getPageData, PageData } from "./utils/data";
+import { Header, Image } from "./components";
+import { getPageData } from "./utils/data";
+import { useStore } from "./store";
 
-const pageData = reactive<PageData>(getPageData());
-const page = ref<number>(0);
+const store = useStore();
 
-console.log(pageData);
+store.pageData = getPageData();
+
+const goToExperience = () => {
+  window.open(store.pageData.section01ExperienceSrc);
+};
 </script>
 
 <style scoped></style>

@@ -1,0 +1,84 @@
+.app-header {
+  width: 100%;
+  height: 90px;
+  padding: 0 88px;
+  background-image: url(/images/background/background-01.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border-bottom: 1px solid var(--pt-border-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  &.fixed {
+    position: fixed;
+  }
+  .app-logo {
+    flex-shrink: 0;
+    height: 50px;
+  }
+  .menu {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    .menu-item {
+      height: 100%;
+      width: 145px;
+      margin: 0 5px;
+      color: #666666;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition-duration: 0.2s;
+      position: relative;
+      &::after {
+        display: block;
+        content: "";
+        height: 4px;
+        width: 0;
+        background-color: var(--el-color-primary);
+        transition-duration: 0.2s;
+        position: absolute;
+        left: 50%;
+        margin-left: 0;
+        bottom: 0;
+      }
+      &:hover {
+        color: var(--el-color-primary);
+      }
+      &.active {
+        color: var(--el-color-primary);
+        &::after {
+          width: 40px;
+          margin-left: -20px;
+        }
+      }
+    }
+  }
+  .phone-box {
+    flex-shrink: 0;
+    min-width: 280px;
+    height: 64px;
+    padding: 0 30px;
+    background-color: rgba(255, 255, 255, 0.38);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    .icon {
+      flex-shrink: 0;
+      height: 30px;
+      margin-right: 27px;
+    }
+    .phone {
+      font-weight: bold;
+      color: var(--el-color-primary);
+    }
+  }
+}
