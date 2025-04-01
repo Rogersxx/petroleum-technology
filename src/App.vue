@@ -6,6 +6,7 @@
       <Section02></Section02>
       <Section03></Section03>
       <Section04></Section04>
+      <Section05></Section05>
     </li>
     <template v-for="(menuItem, index) in store.pageData.pageList" :key="index">
       <li
@@ -17,6 +18,7 @@
       </li>
     </template>
   </ul>
+  <Footer></Footer>
 </template>
 
 <script setup lang="ts">
@@ -26,6 +28,8 @@ import {
   Section02,
   Section03,
   Section04,
+  Section05,
+  Footer,
 } from "./components";
 import { getPageData } from "./utils/data";
 import { useStore } from "./store";

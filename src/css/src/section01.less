@@ -25,12 +25,13 @@
     height: 72px;
     line-height: 72px;
     font-size: 72px;
-    background: -webkit-linear-gradient(
+    -webkit-background-clip: text;
+    /* background: -webkit-linear-gradient(
       64deg,
       var(--el-color-primary-dark-3) 0%,
       var(--el-color-primary) 100%
-    );
-    -webkit-background-clip: text;
+    ); */
+    background: -webkit-linear-gradient(64deg, #217af4 0%, #219cf4 100%);
     -webkit-text-fill-color: transparent;
     background-clip: text;
     font-weight: bold;
@@ -40,31 +41,6 @@
     height: 20px;
     line-height: 20px;
     margin-bottom: 115px;
-  }
-  .experience {
-    width: 200px;
-    height: 68px;
-    background: linear-gradient(64deg, #217af4, #219cf4);
-    border-radius: 6px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 42px;
-    cursor: pointer;
-    transition-duration: 0.2s;
-    &:hover {
-      box-shadow: 0 0 10px var(--el-color-primary-opacity-9);
-    }
-    .text {
-      color: #ffffff;
-      font-size: 24px;
-      font-weight: bold;
-      margin-right: 21px;
-    }
-    .icon {
-      flex-shrink: 0;
-      height: 21px;
-    }
   }
   .module-list {
     width: 100%;
@@ -82,6 +58,9 @@
       overflow: hidden;
       margin: 0 14px;
       position: relative;
+      bottom: 0;
+      cursor: pointer;
+      transition-duration: 0.2s;
       .background {
         width: 560px;
         height: 200px;
@@ -105,6 +84,10 @@
         white-space: pre;
         position: relative;
         z-index: 1;
+      }
+      &:hover {
+        box-shadow: 0 0 20px var(--el-color-primary-opacity-9);
+        bottom: 10px;
       }
     }
   }

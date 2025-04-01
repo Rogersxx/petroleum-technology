@@ -6,10 +6,14 @@ window.PAGE_DATA = [
     language: "简体中文",
     /* 浏览器标签显示名称（网站名称） */
     title: "xxx官网",
-    /* 网站logo地址 */
+    /* 网站头部logo地址 */
     logo: "/images/background/logo.png",
+    /* 网站底部logo地址 */
+    footerLogo: "/images/background/logo-02.png",
     /* 联系电话 */
     phone: "199 9999 9999",
+    /* 体验页面链接 */
+    ExperienceButtonLink: "https://www.baidu.com/",
     /* 头部菜单是否固定 */
     headerFixed: false,
     /* 
@@ -25,12 +29,11 @@ window.PAGE_DATA = [
     ],
     section01Text: [
       "数字化转型驱动者",
-      "Majnoon油田",
+      "MAJNOON油田",
       "统一云管理平台",
       "纳管VMware/Proxmox/公有云，实现全球资源集中调度与租户自治",
       "去体验",
     ],
-    section01ExperienceSrc: "https://www.baidu.com/",
     section01BottomModuleList: [
       {
         title: "全栈云资源跨域融合",
@@ -126,5 +129,143 @@ window.PAGE_DATA = [
       "智能系统平台架构",
       "端到端架构深度解构，核心工艺场景全承载",
     ],
+    section04FrameworkList: [
+      {
+        background: "theme",
+        padding: true,
+        hideTop: false,
+        hideBottom: false,
+        contentColor: "theme",
+        contentBackground: "theme",
+        contentList: [
+          { flexGrow: 0, noBackGround: true, content: "Tenant Applications" },
+          { content: "Online Learning" },
+          { content: "Smart HR" },
+          { content: "PE Work" },
+          { flexGrow: 0, noBackGround: true, content: " . . . " },
+          { content: "LLM \nKnowledge Base" },
+        ],
+      },
+      {
+        contentList: [
+          { content: "Cloud Lifecycle" },
+          { content: "Repository" },
+          { content: "Region MGT" },
+          { content: "Multi-Tenant / Quota" },
+          { content: "API / Teminal" },
+        ],
+      },
+      {
+        padding: false,
+        contentColor: "grey",
+        contentList: [
+          {
+            icon: "/images/icon/ISMC Multi Cloud Kernel.png",
+            content: "ISMC Multi Cloud Kernel",
+          },
+        ],
+      },
+      {
+        contentColor: "grey",
+        hideBottom: true,
+        contentList: [
+          { flexGrow: 3, content: "Compute & Schedule Driver" },
+          { content: "Storage Driver" },
+          { content: "Network Driver" },
+        ],
+      },
+      {
+        contentColor: "grey",
+        contentBackground: "grey",
+        hideTop: true,
+        contentList: [
+          { content: "CPU" },
+          { content: "Memory" },
+          { content: "GPU" },
+          { content: "Disk" },
+          { content: "Network" },
+        ],
+      },
+      {
+        padding: false,
+        contentColor: "grey",
+        contentBackground: "grey",
+        contentList: [
+          {
+            content: "ISMC Mesh Network",
+          },
+        ],
+      },
+      {
+        padding: false,
+        contentColor: "grey",
+        contentList: [
+          {
+            flexGrow: 3,
+            content: "Bara Metal",
+          },
+          {
+            flexGrow: 5,
+            contentList: [
+              { type: "img", content: "/images/icon/vmware.png" },
+              { type: "img", content: "/images/icon/huawei.png" },
+              { type: "text", content: "Private Cloud" },
+            ],
+          },
+          {
+            flexGrow: 9,
+            contentList: [
+              { type: "img", content: "/images/icon/aws.png" },
+              { type: "img", content: "/images/icon/google-cloud.png" },
+              { type: "text", content: "Private Cloud" },
+              { type: "img", content: "/images/icon/aliyun.png" },
+              { type: "img", content: "/images/icon/azure.png" },
+            ],
+          },
+        ],
+      },
+    ],
+    section05Text: ["开启服务之旅——勘探启新程，智能永护航"],
+    footerText: "可以写一些介绍性的话语，口号之类的内容",
+    footerIconLinkList: [
+      { icon: "/images/icon/instagram.png", link: "https://www.baidu.com/" },
+      { icon: "/images/icon/facebook.png", link: "https://www.baidu.com/" },
+      { icon: "/images/icon/phone-02.png", link: "https://www.baidu.com/" },
+    ],
+    footerFriendshipLinkList: [
+      {
+        title: "模块标题",
+        list: [
+          { name: "页面链接", link: "https://www.baidu.com/" },
+          { name: "页面链接", link: "https://www.baidu.com/" },
+          { name: "页面链接", link: "https://www.baidu.com/" },
+        ],
+      },
+      {
+        title: "模块标题",
+        list: [
+          { name: "页面链接", link: "https://www.baidu.com/" },
+          { name: "页面链接", link: "https://www.baidu.com/" },
+          { name: "页面链接", link: "https://www.baidu.com/" },
+        ],
+      },
+      {
+        title: "模块标题",
+        list: [
+          { name: "页面链接", link: "https://www.baidu.com/" },
+          { name: "页面链接", link: "https://www.baidu.com/" },
+          { name: "页面链接", link: "https://www.baidu.com/" },
+        ],
+      },
+      {
+        title: "模块标题",
+        list: [
+          { name: "页面链接", link: "https://www.baidu.com/" },
+          { name: "页面链接", link: "https://www.baidu.com/" },
+          { name: "页面链接", link: "https://www.baidu.com/" },
+        ],
+      },
+    ],
+    copyright: "Copyright © 2023 Hostoso Evonicmedia. All rights reserved.",
   },
 ];
